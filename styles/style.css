@@ -12,7 +12,12 @@
     display:flex;
     align-items:center;
     margin:30px auto;
+}  
+#logo{
+    width: 50px;
+    height:40px;
 }
+
 ul{
     flex:1;
     text-align: right;
@@ -52,16 +57,63 @@ ul li a:hover::after{
 
 }
 .banner{
-display:flex;
-margin-top: 80px;
+     display:flex;
+     margin-top: 80px;
 }
 .left-column,.right-column{
-flex-basis: 50%;
+      flex-basis: 50%;
 }
 .right-column img{
-    max-width: 100%;
+    width: 100%;
     border-radius: 10%;
+
 }
-
-
-
+.search-box{
+    width:45%;
+    display:flex;
+    padding-bottom: 3px;
+    padding-bottom: 1px solid #ddd;
+    margin: 10px 0 30px;
+}
+.search-box img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.search-box input{
+    width:100%;
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+.left-column h1{
+    font-size: 60px;
+    
+}
+.left-column h3{
+    font-size: 35px;
+}
+span{
+    color:#f14a60;
+}
+.left-column p{
+    font-size: 14px;
+    color:hwb(10 20% 71% / 0.911);
+    margin: 50px 0;
+}
+.btn button{
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #fb7381;
+    border-radius: 20px;
+    cursor: pointer;
+    color:#fb7381;
+    background:transparent;
+}
+.btn .primary-btn{
+    background: linear-gradient(#fb7381,#f14a60);
+    box-shadow: 0 2px 15px rgba(248, 38 ,103,0.26);
+    color:#fff;
+}
