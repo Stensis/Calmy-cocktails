@@ -1,9 +1,29 @@
-let menu = document.queryselector('menu-bars');
-let navbar = document.queryselector('.navbar')
 
-menu.onclick =() =>{
-    menu.classList
-}
+// const input=document.getElementById("#search")
+// .addEventListener("click",button)
+// function button(){
+//     alert('online')
+// }
+
+
+
+
+
+
+// const button=document.getElementsByClassName("primary-btn").addEventlistener("onclick",button)
+// function button(){
+//     alert(welcome)
+// }
+
+
+
+// const icon = document.getElementsByClassName('search-box');
+// const input = document.queryselector('.text')
+
+// menu.onclick =() =>{
+//     menu.classList
+// }
+//  API KEY
 
 const axios = require("axios");
 
