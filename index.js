@@ -3,15 +3,7 @@
 let menuBtn = document.getElementById("menuBtn");
 // get id for menuSlot div
 let menuData = document.getElementById("menuData");
-//  API KEY
-const options = {
-    method: 'GET',
-    url: 'https://the-cocktail-db.p.rapidapi.com/popular.php',
-    headers: {
-        'X-RapidAPI-Key': 'f65e2f85c4mshfd238deadc30f07p192954jsnd2b2e354f582',
-        'X-RapidAPI-Host': 'the-cocktail-db.p.rapidapi.com'
-    }
-};
+
 // axios requesting data.
 axios.request(options).then(function (response) {
     console.log(response.data);
