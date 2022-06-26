@@ -7,15 +7,17 @@ let menuData = document.getElementById("menuData");
 const options = {
     method: 'GET',
     url: 'https://the-cocktail-db.p.rapidapi.com/popular.php',
+    responseType: 'json',
     headers: {
         'X-RapidAPI-Key': 'f65e2f85c4mshfd238deadc30f07p192954jsnd2b2e354f582',
-        'X-RapidAPI-Host': 'the-cocktail-db.p.rapidapi.com'
+        'X-RapidAPI-Host': 'the-cocktail-db.p.rapidapi.com',
+        'Content-Type':'application/json',
     }
 };
 // axios requesting data.
 axios.request(options).then(function (response) {
     console.log(response.data);
-    let data = response.data;
+    let data =(response.data);
     // adding event listener
     menuBtn.addEventListener('click',function(){
         menuData.innerHTML = `<center><h1><span><u>Menu List</u></span></h1></center>`;
